@@ -83,19 +83,19 @@ A complete, gradual learning path designed for absolute beginners.  Each exercis
 **Concept:** Images are templates for containers  
 **Expected:** You should see hello-world image
 
-**Exercise 12: Pull an Image**  
+**Exercise 12: Pull an Image** ✅ 
 **Goal:** Download an image without running it  
 **Task:** Run `docker pull alpine`  
 **Concept:** `pull` downloads image from registry  
 **Note:** alpine is a tiny Linux distribution
 
-**Exercise 13: Check Image Size**  
+**Exercise 13: Check Image Size**  ✅
 **Goal:** Understand image sizes vary  
 **Task:** Run `docker images` and look at SIZE column  
 **Concept:** Smaller images are faster to download  
 **Compare:** hello-world vs alpine sizes
 
-**Exercise 14: Pull Ubuntu Image**  
+**Exercise 14: Pull Ubuntu Image**  ✅
 **Goal:** Get a common base image  
 **Task:** Run `docker pull ubuntu`  
 **Concept:** Ubuntu is a popular base for many containers  
@@ -105,30 +105,30 @@ A complete, gradual learning path designed for absolute beginners.  Each exercis
 **Task:** Compare alpine (~5MB) vs ubuntu (~77MB)  
 **Concept:** Choose base images wisely for production  
 
-**Exercise 16: Image Tags** ⭐  
+**Exercise 16: Image Tags** ⭐ ✅ 
 **Goal:** Understand image versions  
 **Task:** Run `docker pull ubuntu:22.04`  
 **Concept:** Tags specify image version (default is :latest)  
 **Help:** Tag comes after colon
 
-**Exercise 17: List Specific Tag**  
+**Exercise 17: List Specific Tag** ✅ 
 **Goal:** See tagged images  
 **Task:** Run `docker images ubuntu`  
 **Concept:** Filter images by name  
 **Expected:** You may see multiple ubuntu versions
 
-**Exercise 18: Remove an Image**  
+**Exercise 18: Remove an Image**  ✅
 **Goal:** Clean up unused images  
 **Task:** Run `docker rmi hello-world`  
 **Concept:** `rmi` removes images  
 **Warning:** Can't remove if containers exist using it
 
-**Exercise 19: Force Remove Image**  
+**Exercise 19: Force Remove Image** ✅ 
 **Goal:** Remove image with existing containers  
 **Task:** Run `docker rmi -f hello-world`  
 **Concept:** `-f` forces removal  
 
-**Exercise 20: Pull Nginx Image** ⭐  
+**Exercise 20: Pull Nginx Image** ⭐ ✅
 **Goal:** Get a web server image  
 **Task:** Run `docker pull nginx`  
 **Concept:** nginx is popular web server  
