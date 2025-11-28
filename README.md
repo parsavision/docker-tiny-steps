@@ -138,59 +138,59 @@ A complete, gradual learning path designed for absolute beginners.  Each exercis
 
 ### Week 3: Running Containers
 
-**Exercise 21: Run Alpine Container**  
+**Exercise 21: Run Alpine Container** ✅ 
 **Goal:** Run a minimal Linux container  
 **Task:** Run `docker run alpine`  
 **Concept:** Container runs default command and exits  
 **Expected:** Nothing visible happens
 
-**Exercise 22: Run Command in Container** ⭐  
+**Exercise 22: Run Command in Container** ⭐✅  
 **Goal:** Execute specific command  
 **Task:** Run `docker run alpine echo "Hello from container"`  
 **Concept:** Override default command  
 **Expected:** You see "Hello from container"
 
-**Exercise 23: List Files in Container**  
+**Exercise 23: List Files in Container** ✅ 
 **Goal:** Explore container filesystem  
 **Task:** Run `docker run alpine ls /`  
 **Concept:** Containers have their own filesystem  
 **Expected:** You see Linux directory structure
 
-**Exercise 24: Interactive Mode** ⭐  
+**Exercise 24: Interactive Mode** ⭐✅  
 **Goal:** Get inside a container  
 **Task:** Run `docker run -it alpine /bin/sh`  
 **Concept:** `-i` interactive, `-t` terminal  
 **Help:** Type `exit` to leave
 
-**Exercise 25: Explore Inside Container**  
+**Exercise 25: Explore Inside Container**✅  
 **Goal:** Look around inside container  
 **Task:** While inside alpine, run `ls`, `pwd`, `cat /etc/os-release`  
 **Concept:** Container has isolated filesystem  
 **Help:** You're in a mini Linux system! 
 
-**Exercise 26: Check Container Hostname**  
+**Exercise 26: Check Container Hostname**✅  
 **Goal:** See container's identity  
 **Task:** Inside container, run `hostname`  
 **Concept:** Each container has unique hostname (same as container ID)  
 
-**Exercise 27: Container User**  
+**Exercise 27: Container User** ✅ 
 **Goal:** See who you are inside container  
 **Task:** Run `whoami` inside container  
 **Concept:** Default user is often root  
 **Expected:** "root" in most cases
 
-**Exercise 28: Exit Container** ⭐  
+**Exercise 28: Exit Container** ⭐✅  
 **Goal:** Leave interactive container  
 **Task:** Type `exit` or press Ctrl+D  
 **Concept:** Exiting stops the container  
 **Note:** Container stops when main process ends
 
-**Exercise 29: Run Ubuntu Interactive**  
+**Exercise 29: Run Ubuntu Interactive**✅  
 **Goal:** Practice with another distribution  
 **Task:** Run `docker run -it ubuntu bash`  
 **Concept:** Ubuntu uses bash by default  
 
-**Exercise 30: Install Package in Container** 📝  
+**Exercise 30: Install Package in Container** 📝✅  
 **Goal:** Modify running container  
 **Task:** Inside Ubuntu, run `apt update && apt install -y curl`  
 **Concept:** You can install software inside container  
@@ -202,36 +202,36 @@ A complete, gradual learning path designed for absolute beginners.  Each exercis
 
 ### Week 4: Container States
 
-**Exercise 31: Run in Background** ⭐  
+**Exercise 31: Run in Background** ⭐✅  
 **Goal:** Run container without blocking terminal  
 **Task:** Run `docker run -d nginx`  
 **Concept:** `-d` is detached mode  
 **Expected:** Returns container ID
 
-**Exercise 32: Verify Running Container**  
+**Exercise 32: Verify Running Container**✅  
 **Goal:** See container is running  
 **Task:** Run `docker ps`  
 **Concept:** Now you'll see nginx running  
 **Note:** Shows STATUS as "Up X seconds"
 
-**Exercise 33: Stop a Container** ⭐  
+**Exercise 33: Stop a Container** ⭐✅  
 **Goal:** Gracefully stop running container  
 **Task:** Run `docker stop <container_id>`  
 **Concept:** Sends SIGTERM, waits, then SIGKILL  
 **Help:** Use ID from `docker ps`
 
-**Exercise 34: Start a Container** ⭐  
+**Exercise 34: Start a Container** ⭐ ✅ 
 **Goal:** Restart stopped container  
 **Task:** Run `docker start <container_id>`  
 **Concept:** Start previously stopped container  
 **Note:** Container keeps its data
 
-**Exercise 35: Restart a Container**  
+**Exercise 35: Restart a Container**✅  
 **Goal:** Stop and start in one command  
 **Task:** Run `docker restart <container_id>`  
 **Concept:** Combines stop and start  
 
-**Exercise 36: Kill a Container**  
+**Exercise 36: Kill a Container**✅  
 **Goal:** Force stop immediately  
 **Task:** Run `docker kill <container_id>`  
 **Concept:** Sends SIGKILL (no grace period)  
